@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.titleLabel = new System.Windows.Forms.Label();
             this.ticketLabel = new System.Windows.Forms.Label();
             this.popcornLabel = new System.Windows.Forms.Label();
@@ -357,6 +358,7 @@
             this.Controls.Add(this.popcornLabel);
             this.Controls.Add(this.ticketLabel);
             this.Controls.Add(this.titleLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "CashRegister";
             this.ResumeLayout(false);
