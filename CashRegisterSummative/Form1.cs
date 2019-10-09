@@ -186,9 +186,9 @@ namespace CashRegisterSummative
             numbOfPopcorns = 0;
             numbOfDrinks = 0;
 
-            ticketInput.Text = "";
-            popcornInput.Text = "";
-            drinkInput.Text = "";
+            ticketInput.Text = "0";
+            popcornInput.Text = "0";
+            drinkInput.Text = "0";
 
             changeOutput.Text = "";
             tenderedInput.Text = "";
