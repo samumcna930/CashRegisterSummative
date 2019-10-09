@@ -11,7 +11,7 @@ using System.Threading;
 using System.Media; 
 
 namespace CashRegisterSummative
-{
+{    //Samuel McNab CashRegisterSummative 10/09/2019
     public partial class Form1 : Form
     {
         const double TICKET = 12.00;
@@ -114,33 +114,43 @@ namespace CashRegisterSummative
             //title of receipt 
             g.DrawString("McNab Movies Inc.", drawFont, drawBrush, 470, 100);
             Thread.Sleep(200);
+
             //random date
             g.DrawString(day + "/" + month + "/09", drawFont, drawBrush, 455, 135);
             Thread.Sleep(200);
+
             //random order number
             g.DrawString("Order # " + order, drawFont, drawBrush, 455, 150);
             Thread.Sleep(200);
+
             //amount of ticket(s) and total price without tax
             g.DrawString("Ticket            " + "x" + numbOfTickets + "      @" + (numbOfTickets * TICKET).ToString("C"), drawFont, drawBrush, 455, 170);
             Thread.Sleep(200);
+
             //amount of popcorn(s) and total price without tax
             g.DrawString("\nPopcorn           " + "x" + numbOfPopcorns + "      @" + (numbOfPopcorns * POPCORN).ToString("C"), drawFont, drawBrush, 455, 170);
             Thread.Sleep(200);
+
             //amount of drink(s) and total price without tax
             g.DrawString("\n\nDrink             " + "x" + numbOfDrinks + "      @" + (numbOfDrinks * DRINK).ToString("C"), drawFont, drawBrush, 455, 170);
             Thread.Sleep(200);
+
             //total amount of all items together without tax
             g.DrawString("\n\n\nSubtotal                   " + (costOfOrder).ToString("C"), drawFont, drawBrush, 455, 250);
             Thread.Sleep(200);
+
             //tax amount from the order
             g.DrawString("\n\n\n\nTax                        " + (taxCost).ToString("C"), drawFont, drawBrush, 455, 250);
             Thread.Sleep(200);
+
             //total amount including tax
             g.DrawString("\n\n\n\n\nTotal                      " + (costOfOrderTotal).ToString("C"), drawFont, drawBrush, 455, 250);
             Thread.Sleep(200);
+
             //amount customer tendered 
             g.DrawString("\n\n\n\n\n\n\nTendered                   " + (tendered).ToString("C"), drawFont, drawBrush, 455, 300);
             Thread.Sleep(200);
+
             //amount of change from tendered
             g.DrawString("\n\n\n\n\n\n\n\nChange                     " + (change).ToString("C"), drawFont, drawBrush, 455, 300);
             Thread.Sleep(200);
