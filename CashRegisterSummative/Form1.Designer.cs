@@ -46,7 +46,6 @@
             this.blackLabel = new System.Windows.Forms.Label();
             this.tenderedLabel = new System.Windows.Forms.Label();
             this.calculateChangeButton = new System.Windows.Forms.Button();
-            this.outputLabel = new System.Windows.Forms.Label();
             this.messageLabel = new System.Windows.Forms.Label();
             this.changeLabel = new System.Windows.Forms.Label();
             this.changeOutput = new System.Windows.Forms.Label();
@@ -63,9 +62,10 @@
             // titleLabel
             // 
             this.titleLabel.Font = new System.Drawing.Font("Consolas", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(12, 9);
+            this.titleLabel.Location = new System.Drawing.Point(16, 11);
+            this.titleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(266, 40);
+            this.titleLabel.Size = new System.Drawing.Size(355, 49);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "McNab Movies";
             // 
@@ -73,9 +73,10 @@
             // 
             this.ticketLabel.AutoSize = true;
             this.ticketLabel.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ticketLabel.Location = new System.Drawing.Point(92, 92);
+            this.ticketLabel.Location = new System.Drawing.Point(123, 113);
+            this.ticketLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ticketLabel.Name = "ticketLabel";
-            this.ticketLabel.Size = new System.Drawing.Size(72, 18);
+            this.ticketLabel.Size = new System.Drawing.Size(90, 22);
             this.ticketLabel.TabIndex = 1;
             this.ticketLabel.Text = "Tickets:";
             // 
@@ -83,9 +84,10 @@
             // 
             this.popcornLabel.AutoSize = true;
             this.popcornLabel.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.popcornLabel.Location = new System.Drawing.Point(44, 130);
+            this.popcornLabel.Location = new System.Drawing.Point(59, 160);
+            this.popcornLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.popcornLabel.Name = "popcornLabel";
-            this.popcornLabel.Size = new System.Drawing.Size(120, 18);
+            this.popcornLabel.Size = new System.Drawing.Size(150, 22);
             this.popcornLabel.TabIndex = 2;
             this.popcornLabel.Text = "Large Popcorn:";
             // 
@@ -93,42 +95,47 @@
             // 
             this.largeDrinkLabel.AutoSize = true;
             this.largeDrinkLabel.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.largeDrinkLabel.Location = new System.Drawing.Point(60, 168);
+            this.largeDrinkLabel.Location = new System.Drawing.Point(80, 207);
+            this.largeDrinkLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.largeDrinkLabel.Name = "largeDrinkLabel";
-            this.largeDrinkLabel.Size = new System.Drawing.Size(104, 18);
+            this.largeDrinkLabel.Size = new System.Drawing.Size(130, 22);
             this.largeDrinkLabel.TabIndex = 3;
             this.largeDrinkLabel.Text = "Large Drink:";
             // 
             // ticketInput
             // 
-            this.ticketInput.Location = new System.Drawing.Point(161, 92);
+            this.ticketInput.Location = new System.Drawing.Point(215, 113);
+            this.ticketInput.Margin = new System.Windows.Forms.Padding(4);
             this.ticketInput.Name = "ticketInput";
-            this.ticketInput.Size = new System.Drawing.Size(44, 20);
+            this.ticketInput.Size = new System.Drawing.Size(57, 22);
             this.ticketInput.TabIndex = 4;
             this.ticketInput.Text = "0";
             // 
             // popcornInput
             // 
-            this.popcornInput.Location = new System.Drawing.Point(161, 127);
+            this.popcornInput.Location = new System.Drawing.Point(215, 156);
+            this.popcornInput.Margin = new System.Windows.Forms.Padding(4);
             this.popcornInput.Name = "popcornInput";
-            this.popcornInput.Size = new System.Drawing.Size(44, 20);
+            this.popcornInput.Size = new System.Drawing.Size(57, 22);
             this.popcornInput.TabIndex = 5;
             this.popcornInput.Text = "0";
             // 
             // drinkInput
             // 
-            this.drinkInput.Location = new System.Drawing.Point(161, 168);
+            this.drinkInput.Location = new System.Drawing.Point(215, 207);
+            this.drinkInput.Margin = new System.Windows.Forms.Padding(4);
             this.drinkInput.Name = "drinkInput";
-            this.drinkInput.Size = new System.Drawing.Size(44, 20);
+            this.drinkInput.Size = new System.Drawing.Size(57, 22);
             this.drinkInput.TabIndex = 6;
             this.drinkInput.Text = "0";
             // 
             // calculateButton
             // 
             this.calculateButton.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculateButton.Location = new System.Drawing.Point(47, 218);
+            this.calculateButton.Location = new System.Drawing.Point(63, 268);
+            this.calculateButton.Margin = new System.Windows.Forms.Padding(4);
             this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(181, 43);
+            this.calculateButton.Size = new System.Drawing.Size(241, 53);
             this.calculateButton.TabIndex = 7;
             this.calculateButton.Text = "Calculate Totals";
             this.calculateButton.UseVisualStyleBackColor = true;
@@ -138,9 +145,10 @@
             // 
             this.subTotalLabel.AutoSize = true;
             this.subTotalLabel.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subTotalLabel.Location = new System.Drawing.Point(26, 302);
+            this.subTotalLabel.Location = new System.Drawing.Point(35, 372);
+            this.subTotalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.subTotalLabel.Name = "subTotalLabel";
-            this.subTotalLabel.Size = new System.Drawing.Size(80, 18);
+            this.subTotalLabel.Size = new System.Drawing.Size(100, 22);
             this.subTotalLabel.TabIndex = 8;
             this.subTotalLabel.Text = "Sub Total";
             // 
@@ -148,18 +156,20 @@
             // 
             this.subTotalOutput.BackColor = System.Drawing.Color.White;
             this.subTotalOutput.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subTotalOutput.Location = new System.Drawing.Point(128, 302);
+            this.subTotalOutput.Location = new System.Drawing.Point(171, 372);
+            this.subTotalOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.subTotalOutput.Name = "subTotalOutput";
-            this.subTotalOutput.Size = new System.Drawing.Size(77, 35);
+            this.subTotalOutput.Size = new System.Drawing.Size(103, 43);
             this.subTotalOutput.TabIndex = 9;
             // 
             // taxLabel
             // 
             this.taxLabel.AutoSize = true;
             this.taxLabel.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.taxLabel.Location = new System.Drawing.Point(26, 358);
+            this.taxLabel.Location = new System.Drawing.Point(35, 441);
+            this.taxLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.taxLabel.Name = "taxLabel";
-            this.taxLabel.Size = new System.Drawing.Size(32, 18);
+            this.taxLabel.Size = new System.Drawing.Size(40, 22);
             this.taxLabel.TabIndex = 10;
             this.taxLabel.Text = "Tax";
             // 
@@ -167,9 +177,10 @@
             // 
             this.totalLabel.AutoSize = true;
             this.totalLabel.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalLabel.Location = new System.Drawing.Point(26, 405);
+            this.totalLabel.Location = new System.Drawing.Point(35, 498);
+            this.totalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.totalLabel.Name = "totalLabel";
-            this.totalLabel.Size = new System.Drawing.Size(48, 18);
+            this.totalLabel.Size = new System.Drawing.Size(60, 22);
             this.totalLabel.TabIndex = 11;
             this.totalLabel.Text = "Total";
             // 
@@ -177,96 +188,99 @@
             // 
             this.taxOutput.BackColor = System.Drawing.Color.White;
             this.taxOutput.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.taxOutput.Location = new System.Drawing.Point(128, 358);
+            this.taxOutput.Location = new System.Drawing.Point(171, 441);
+            this.taxOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.taxOutput.Name = "taxOutput";
-            this.taxOutput.Size = new System.Drawing.Size(77, 23);
+            this.taxOutput.Size = new System.Drawing.Size(103, 28);
             this.taxOutput.TabIndex = 12;
             // 
             // totalOutput
             // 
             this.totalOutput.BackColor = System.Drawing.Color.White;
             this.totalOutput.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalOutput.Location = new System.Drawing.Point(128, 405);
+            this.totalOutput.Location = new System.Drawing.Point(171, 498);
+            this.totalOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.totalOutput.Name = "totalOutput";
-            this.totalOutput.Size = new System.Drawing.Size(77, 23);
+            this.totalOutput.Size = new System.Drawing.Size(103, 28);
             this.totalOutput.TabIndex = 13;
             // 
             // blackLabel
             // 
             this.blackLabel.BackColor = System.Drawing.Color.Black;
-            this.blackLabel.Location = new System.Drawing.Point(17, 457);
+            this.blackLabel.Location = new System.Drawing.Point(23, 562);
+            this.blackLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.blackLabel.Name = "blackLabel";
-            this.blackLabel.Size = new System.Drawing.Size(277, 11);
+            this.blackLabel.Size = new System.Drawing.Size(369, 14);
             this.blackLabel.TabIndex = 14;
             // 
             // tenderedLabel
             // 
             this.tenderedLabel.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tenderedLabel.Location = new System.Drawing.Point(12, 497);
+            this.tenderedLabel.Location = new System.Drawing.Point(16, 612);
+            this.tenderedLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tenderedLabel.Name = "tenderedLabel";
-            this.tenderedLabel.Size = new System.Drawing.Size(145, 23);
+            this.tenderedLabel.Size = new System.Drawing.Size(193, 28);
             this.tenderedLabel.TabIndex = 15;
             this.tenderedLabel.Text = "Amount Tendered:";
             // 
             // calculateChangeButton
             // 
             this.calculateChangeButton.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculateChangeButton.Location = new System.Drawing.Point(51, 540);
+            this.calculateChangeButton.Location = new System.Drawing.Point(68, 665);
+            this.calculateChangeButton.Margin = new System.Windows.Forms.Padding(4);
             this.calculateChangeButton.Name = "calculateChangeButton";
-            this.calculateChangeButton.Size = new System.Drawing.Size(177, 37);
+            this.calculateChangeButton.Size = new System.Drawing.Size(236, 46);
             this.calculateChangeButton.TabIndex = 17;
             this.calculateChangeButton.Text = "Calculate Change";
             this.calculateChangeButton.UseVisualStyleBackColor = true;
             this.calculateChangeButton.Click += new System.EventHandler(this.CalculateChangeButton_Click);
             // 
-            // outputLabel
-            // 
-            this.outputLabel.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outputLabel.Location = new System.Drawing.Point(29, 53);
-            this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(249, 23);
-            this.outputLabel.TabIndex = 18;
-            // 
             // messageLabel
             // 
-            this.messageLabel.AutoSize = true;
-            this.messageLabel.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.messageLabel.Location = new System.Drawing.Point(20, 53);
+            this.messageLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.messageLabel.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.messageLabel.ForeColor = System.Drawing.Color.Red;
+            this.messageLabel.Location = new System.Drawing.Point(39, 65);
+            this.messageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.messageLabel.Name = "messageLabel";
-            this.messageLabel.Size = new System.Drawing.Size(0, 19);
-            this.messageLabel.TabIndex = 19;
+            this.messageLabel.Size = new System.Drawing.Size(332, 28);
+            this.messageLabel.TabIndex = 18;
             // 
             // changeLabel
             // 
             this.changeLabel.AutoSize = true;
             this.changeLabel.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.changeLabel.Location = new System.Drawing.Point(12, 612);
+            this.changeLabel.Location = new System.Drawing.Point(16, 753);
+            this.changeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.changeLabel.Name = "changeLabel";
-            this.changeLabel.Size = new System.Drawing.Size(64, 18);
+            this.changeLabel.Size = new System.Drawing.Size(80, 22);
             this.changeLabel.TabIndex = 20;
             this.changeLabel.Text = "Change:";
             // 
             // changeOutput
             // 
             this.changeOutput.BackColor = System.Drawing.Color.White;
-            this.changeOutput.Location = new System.Drawing.Point(92, 612);
+            this.changeOutput.Location = new System.Drawing.Point(123, 753);
+            this.changeOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.changeOutput.Name = "changeOutput";
-            this.changeOutput.Size = new System.Drawing.Size(72, 23);
+            this.changeOutput.Size = new System.Drawing.Size(96, 28);
             this.changeOutput.TabIndex = 21;
             // 
             // tenderedInput
             // 
-            this.tenderedInput.Location = new System.Drawing.Point(150, 497);
+            this.tenderedInput.Location = new System.Drawing.Point(200, 612);
+            this.tenderedInput.Margin = new System.Windows.Forms.Padding(4);
             this.tenderedInput.Name = "tenderedInput";
-            this.tenderedInput.Size = new System.Drawing.Size(100, 20);
+            this.tenderedInput.Size = new System.Drawing.Size(132, 22);
             this.tenderedInput.TabIndex = 22;
             // 
             // printButton
             // 
             this.printButton.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printButton.Location = new System.Drawing.Point(31, 663);
+            this.printButton.Location = new System.Drawing.Point(41, 816);
+            this.printButton.Margin = new System.Windows.Forms.Padding(4);
             this.printButton.Name = "printButton";
-            this.printButton.Size = new System.Drawing.Size(219, 43);
+            this.printButton.Size = new System.Drawing.Size(292, 53);
             this.printButton.TabIndex = 23;
             this.printButton.Text = "Print Receipt";
             this.printButton.UseVisualStyleBackColor = true;
@@ -275,49 +289,55 @@
             // receiptLabel
             // 
             this.receiptLabel.BackColor = System.Drawing.Color.Black;
-            this.receiptLabel.Location = new System.Drawing.Point(408, 27);
+            this.receiptLabel.Location = new System.Drawing.Point(544, 33);
+            this.receiptLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.receiptLabel.Name = "receiptLabel";
-            this.receiptLabel.Size = new System.Drawing.Size(10, 536);
+            this.receiptLabel.Size = new System.Drawing.Size(13, 660);
             this.receiptLabel.TabIndex = 24;
             // 
             // receiptLabel2
             // 
             this.receiptLabel2.BackColor = System.Drawing.Color.Black;
-            this.receiptLabel2.Location = new System.Drawing.Point(408, 27);
+            this.receiptLabel2.Location = new System.Drawing.Point(544, 33);
+            this.receiptLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.receiptLabel2.Name = "receiptLabel2";
-            this.receiptLabel2.Size = new System.Drawing.Size(347, 10);
+            this.receiptLabel2.Size = new System.Drawing.Size(463, 12);
             this.receiptLabel2.TabIndex = 25;
             // 
             // receiptLabel3
             // 
             this.receiptLabel3.BackColor = System.Drawing.Color.Black;
-            this.receiptLabel3.Location = new System.Drawing.Point(745, 27);
+            this.receiptLabel3.Location = new System.Drawing.Point(993, 33);
+            this.receiptLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.receiptLabel3.Name = "receiptLabel3";
-            this.receiptLabel3.Size = new System.Drawing.Size(10, 532);
+            this.receiptLabel3.Size = new System.Drawing.Size(13, 655);
             this.receiptLabel3.TabIndex = 26;
             // 
             // receiptLabel4
             // 
             this.receiptLabel4.BackColor = System.Drawing.Color.Black;
-            this.receiptLabel4.Location = new System.Drawing.Point(411, 552);
+            this.receiptLabel4.Location = new System.Drawing.Point(548, 679);
+            this.receiptLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.receiptLabel4.Name = "receiptLabel4";
-            this.receiptLabel4.Size = new System.Drawing.Size(344, 11);
+            this.receiptLabel4.Size = new System.Drawing.Size(459, 14);
             this.receiptLabel4.TabIndex = 27;
             // 
             // receiptTitleLabel
             // 
             this.receiptTitleLabel.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.receiptTitleLabel.Location = new System.Drawing.Point(464, 53);
+            this.receiptTitleLabel.Location = new System.Drawing.Point(619, 65);
+            this.receiptTitleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.receiptTitleLabel.Name = "receiptTitleLabel";
-            this.receiptTitleLabel.Size = new System.Drawing.Size(236, 26);
+            this.receiptTitleLabel.Size = new System.Drawing.Size(315, 32);
             this.receiptTitleLabel.TabIndex = 28;
             // 
             // newOrderButton
             // 
             this.newOrderButton.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newOrderButton.Location = new System.Drawing.Point(458, 592);
+            this.newOrderButton.Location = new System.Drawing.Point(611, 729);
+            this.newOrderButton.Margin = new System.Windows.Forms.Padding(4);
             this.newOrderButton.Name = "newOrderButton";
-            this.newOrderButton.Size = new System.Drawing.Size(242, 58);
+            this.newOrderButton.Size = new System.Drawing.Size(323, 71);
             this.newOrderButton.TabIndex = 29;
             this.newOrderButton.Text = "New Order";
             this.newOrderButton.UseVisualStyleBackColor = true;
@@ -325,10 +345,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(789, 718);
+            this.ClientSize = new System.Drawing.Size(1052, 884);
             this.Controls.Add(this.newOrderButton);
             this.Controls.Add(this.receiptTitleLabel);
             this.Controls.Add(this.receiptLabel4);
@@ -340,7 +360,6 @@
             this.Controls.Add(this.changeOutput);
             this.Controls.Add(this.changeLabel);
             this.Controls.Add(this.messageLabel);
-            this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.calculateChangeButton);
             this.Controls.Add(this.tenderedLabel);
             this.Controls.Add(this.blackLabel);
@@ -359,6 +378,7 @@
             this.Controls.Add(this.ticketLabel);
             this.Controls.Add(this.titleLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "CashRegister";
             this.ResumeLayout(false);
@@ -385,7 +405,6 @@
         private System.Windows.Forms.Label blackLabel;
         private System.Windows.Forms.Label tenderedLabel;
         private System.Windows.Forms.Button calculateChangeButton;
-        private System.Windows.Forms.Label outputLabel;
         private System.Windows.Forms.Label messageLabel;
         private System.Windows.Forms.Label changeLabel;
         private System.Windows.Forms.Label changeOutput;

@@ -130,6 +130,7 @@ namespace CashRegisterSummative
             //amount of popcorn(s) and total price without tax
             g.DrawString("\nPopcorn           " + "x" + numbOfPopcorns + "      @" + (numbOfPopcorns * POPCORN).ToString("C"), drawFont, drawBrush, 455, 170);
             Thread.Sleep(200);
+            
 
             //amount of drink(s) and total price without tax
             g.DrawString("\n\nDrink             " + "x" + numbOfDrinks + "      @" + (numbOfDrinks * DRINK).ToString("C"), drawFont, drawBrush, 455, 170);
@@ -146,6 +147,7 @@ namespace CashRegisterSummative
             //total amount including tax
             g.DrawString("\n\n\n\n\nTotal                      " + (costOfOrderTotal).ToString("C"), drawFont, drawBrush, 455, 250);
             Thread.Sleep(200);
+            cashRegister.Play();
 
             //amount customer tendered 
             g.DrawString("\n\n\n\n\n\n\nTendered                   " + (tendered).ToString("C"), drawFont, drawBrush, 455, 300);
